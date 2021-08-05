@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+</head>
+<body>
+    <h1>Introdução ao jQuery</h1>
+
+    <h2>Famosa biblioteca  JavaScript
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, vitae a in ea omnis aspernatur eligendi, optio esse fugit delectus neque debitis, nam laboriosam libero? Esse ad tenetur iste omnis!</p>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus doloremque dolorum quas velit eos natus repellat quibusdam, delectus vitae sit? Inventore sed labore accusantium incidunt nihil dicta, quaerat consequuntur quos.</p>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit reprehenderit quaerat, ducimus corrupti est voluptate. Voluptates dolor laborum minima ex reiciendis accusantium sit at, ullam unde voluptas? Pariatur, culpa nostrum!</p> </h2>
+
+    
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    const titulo = $("h1");
+    console.log(titulo);
+
+    const paragrafos = $("p");
+    console.log(paragrafos);
+
+    paragrafos.css("color", "red");
+
+    titulo.text("Olá jQuery!");
+
+    const subtitulo = $("h2");
+        subtitulo.on("click", function(){
+            titulo.text("Cliqueiiiii :-)");
+            paragrafos.fadeOut();
+            paragrafos.fadeIn();
+            paragrafos.fadeToggle();
+        });
+    
+
+</script>
+</html>

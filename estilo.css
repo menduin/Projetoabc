@@ -1,0 +1,124 @@
+*{box-sizing: border-box;}
+
+
+body{
+    background-color: rgba(244, 247, 244, 0.404);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+    padding: 0;
+    /* CSS RESET */
+}
+
+
+h1 {background-color: black;
+color: white;
+margin: 0%;
+padding-left: 15px;
+}
+
+.introducao{
+    background-image: url(../imagens/teclado.jpg);
+    padding: 220px 0; 
+
+    /* Versão abreviada/curta padding: 220px 0; */
+
+    /* Versão completa: */
+    /* padding-top: 220px;
+    padding-bottom: 220px;
+    padding-left: 0;
+    padding-right: 0; */
+
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+main{
+    width: 90%;
+    margin: auto;
+    max-width: 1000px;
+}
+
+
+/* *p{
+    line-height: 30px;
+    padding-top */
+    
+    footer{
+        background-image: linear-gradient(black, rgb(48, 47, 47));
+        height: 50px;
+        color: rgb(177, 243, 102);
+        font-weight: bold;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;}
+
+.linkedin {
+    color: rgb(65, 45, 241);
+    padding-right: 30px;
+    text-align: right;
+justify-content: right;}
+
+.registro {
+    background-color: darkred;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none; 
+    text-transform: uppercase;
+    position: absolute;
+    width: 160px;
+    height: 160px; 
+    border-radius: 100%;
+    padding-top: 55px;
+    top: 350px;
+    right: 50px;
+    transform: rotate(2deg);
+    transition: 2s;
+}
+
+.hoje {
+    font-size: 24px;
+    color: yellow;
+}
+
+.registro:hover, .registro:focus {
+    background-color: darkblue;
+    transform: rotate(12deg)
+	
+}
+.container {
+margin-top: 80px;
+margin-bottom: 80px;
+}
+
+@media screen and (max-width: 760px){
+    .registro{
+    width:130px;
+    height: 130px;
+    font-weight: 14px;
+    padding-top: 45px;
+}
+
+.hoje { font-size: 35px; }
+}
+
+.treinamentos section {
+    background-color: rgb(243, 48, 48);
+    text-align: center;
+    border-radius: 5px;
+    width: 30%;
+
+}.treinamentos {
+    display: flex;
+    justify-content: space-around;
+
+}
+.flutuar-esquerda{
+    float: left;
+    width: 160px;
+    margin-right: 10px;
+
+}
+.ajuste {padding-top: 15px;}
+        

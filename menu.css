@@ -1,0 +1,68 @@
+header{
+    position: fixed;
+    left: 0;
+    top:0;
+    right:0;
+    z-index: 100;
+}
+.menu {
+    list-style: none;
+    margin:0; 
+    padding:0;
+    background-color: rgb(59, 58, 58);
+
+    /* A propriedade abaixo resolve o efeito colateral do float */
+    overflow: hidden;
+
+}
+
+.menu li{
+    float: left;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 16px;
+    display: block;
+    border-right: solid 1px
+}
+
+.menu li a:hover, .menu li a:focus {
+    background-color: rgb(250, 250, 247);
+    color:black;
+}
+
+/* Versão 1 
+@media screen and (min-width: 760px) {
+.menu li { float:none; }
+.menu li a { text-align: center;} */
+
+.menu li.icone { display: none; }
+
+@media screen and (max-width: 760px){
+
+/* Escondendo os icones do menu */
+    .menu li { display: none; }
+
+    .menu li.icone {
+        display: block;
+        float: right;
+      }
+
+      /* Ativando o posicionamento relativo */
+        .menu.responsivo { position: relative; }
+
+
+/* Acertamos as coordenadas*/
+        .menu.responsivo li.icone {
+            position: absolute;
+            right: 0;
+            top: 0;
+  }
+  
+        .menu.responsivo li {
+            float: none;
+            display: inline;
+  }
+}
